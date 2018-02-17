@@ -9,7 +9,7 @@
         .ie8 .sNv2 .nav UL {border-width:0 1px 1px 1px;border-style:solid;border-color:#CCC #999 #999 #CCC}
         .ie7 .sNv2 .nav UL UL,
         .ie8 .sNv2 .nav UL UL {border-width:1px}
-    .sNv2 .nav UL {
+    .sNv2 .nav UL { 
         opacity:0;
         -webkit-transition:opacity 0.2s, left 0s;
         -moz-transition:opacity 0.2s, left 0s;
