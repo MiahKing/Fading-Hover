@@ -1,0 +1,59 @@
+    /* Main Menu */
+    .sNv2 {width:100%;height:35px;position:absolute;top:0;z-index:101;background:blue;}
+    .sNv2 .sNv2Sub {width:1000px;margin:0 auto;height:35px}
+    /* Main Menu: UL */
+    .sNv2 .nav {float:left;position:relative;top:0;left:0;border-left:1px dotted #41649C;border-left:1px dotted rgba(255, 255, 255, 0.2)}
+    .sNv2 .nav * {margin:0;padding:0;list-style:none}
+    .sNv2 .nav UL {position:absolute;left:-9999em;top:-9999em;z-index:5;width:230px;padding:12px;border:0;font-size:90%;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.3);-webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.3);box-shadow:0px 0px 10px rgba(0,0,0,0.3);background-color:#FFF}
+        .ie7 .sNv2 .nav UL,
+        .ie8 .sNv2 .nav UL {border-width:0 1px 1px 1px;border-style:solid;border-color:#CCC #999 #999 #CCC}
+        .ie7 .sNv2 .nav UL UL,
+        .ie8 .sNv2 .nav UL UL {border-width:1px}
+    .sNv2 .nav UL {
+        opacity:0;
+        -webkit-transition:opacity 0.2s, left 0s;
+        -moz-transition:opacity 0.2s, left 0s;
+        -ms-transition:opacity 0.2s, left 0s; 
+        -o-transition:opacity 0.2s, left 0s;
+        transition:opacity 0.2s, left 0s;
+        }
+    .sNv2 .nav LI:Hover UL {
+        left:0;
+        top:35px; 
+        opacity:1;             
+        -webkit-transition-delay:0.1s;     
+        -moz-transition-delay:0.1s; 
+        -ms-transition-delay:0.1s;     
+        -o-transition-delay:0.1s;     
+        transition-delay:0.1s;                                     
+        }
+        .ie7 .sNv2 .nav LI:Hover UL,
+        .ie8 .sNv2 .nav LI:Hover UL {left:-1px}
+    .sNv2 .nav LI:Hover UL UL {left:-9999em;top:-9999em}
+    .sNv2 .nav LI:Hover LI:Hover UL {left:230px;top:-13px}
+    /* Main Menu: LI */
+    .sNv2 .nav LI {position:relative;float:left;border-right:1px dotted #41649C;border-right:1px dotted rgba(255, 255, 255, 0.2)}
+    .sNv2 .nav UL LI {float:none;border:none;border-bottom:1px dotted #DDD;border-bottom:1px dotted rgba(0, 0, 0, 0.15)}
+    .sNv2 .nav UL LI:First-child {border-top:1px dotted #DDD;border-top:1px dotted rgba(0, 0, 0, 0.15)}
+    .sNv2 .nav UL LI:Hover {background-color:#FFF0D1}
+    /* Main Menu: A */
+    .sNv2 .nav LI A {position:relative;height:35px;line-height:35px;padding:0 15px;display:block;text-decoration:none;color:#B2CEFF;
+        -webkit-transition:background 0.2s, color 0.2s;
+        -moz-transition:background 0.2s, color 0.2s;
+        -ms-transition:background 0.2s, color 0.2s; 
+        -o-transition:background 0.2s, color 0.2s;
+        transition:background 0.2s, color 0.2s;
+        }
+    .sNv2 .nav LI:Hover A {color:#444;padding-bottom:6px;position:relative;z-index:999;background-color:#FFF;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;z-index:10;
+        -webkit-transition-delay:0.1s;     
+        -moz-transition-delay:0.1s; 
+        -ms-transition-delay:0.1s;     
+        -o-transition-delay:0.1s;     
+        transition-delay:0.1s}
+        .ie7 .sNv2 .nav LI:Hover A,
+        .ie8 .sNv2 .nav LI:Hover A {padding-bottom:0}
+    .sNv2 .nav LI:Hover UL LI A,
+    .sNv2 .nav LI:Hover UL LI:Hover UL A {height:26px;line-height:26px;padding:0 3px;color:#777;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;background-color:transparent}
+    .sNv2 .nav LI:Hover UL LI A:Hover,
+    .sNv2 .nav LI:Hover UL LI:Hover A,
+    .sNv2 .nav LI:Hover UL LI:Hover UL A:Hover {color:#444}
